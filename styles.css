@@ -1,64 +1,229 @@
-:root{
+:root {
   --bg: #fafafa;
-  --fg: #0f172a;
-  --muted: #475569;
+  --fg: #222;
+  --muted: #666;
   --link: #2563eb;
-  --card: #ffffff;
+  --card: #fff;
   --border: #e2e8f0;
 }
-@media (prefers-color-scheme: dark){
-  :root{
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --bg: #0b0f1a;
     --fg: #e5e7eb;
     --muted: #94a3b8;
     --link: #60a5fa;
-    --card: #0f1626;
+    --card: #18181b;
     --border: #1f2937;
   }
 }
-html,body{height:100%}
-body{
-  margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  color: var(--fg); background: var(--bg);
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--fg);
 }
-.wrap{max-width: 860px; margin: 0 auto; padding: 32px 20px 72px}
-header{display:flex; align-items: center; gap: 24px; margin-bottom: 28px}
-.avatar{width: 160px; height:160px; border-radius: 12px; object-fit: cover; border:1px solid var(--border); background: var(--card)}
-h1{font-size: clamp(28px, 4vw, 36px); line-height:1.2; margin:0 0 6px 0}
-.subtitle{color: var(--muted); margin:0}
-nav{margin-top: 8px}
-nav a{color: var(--muted); text-decoration: none; margin-right: 14px}
-nav a:hover{color: var(--fg); text-decoration: underline}
 
-main{display:flex; flex-direction: column; gap: 28px}
-@media (max-width: 820px){ header{flex-direction: row} }
-
-.intro{background: var(--card); border:1px solid var(--border); padding:18px 18px; border-radius: 14px}
-.intro p{margin: 0 0 16px 0}
-
-.gallery {display: flex; gap: 10px; margin-top: 12px}
-.gallery img {width: 200px; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border)}
-
-.section{margin-top: 32px}
-.section h2{font-size: 18px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px}
-
-.projects{display:flex; flex-direction: column; gap: 14px}
-.proj{
-  border:1px solid var(--border); background: var(--card); border-radius: 12px; padding: 12px 14px;
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 72px;
 }
-.proj h3{margin:0 0 2px; font-size: 16px}
-.proj a{color: var(--fg); text-decoration: none}
-.proj a:hover{color: var(--link); text-decoration: underline}
-.proj p{margin: 4px 0 0; color: var(--muted)}
-.tags{margin-top:6px; display:flex; flex-wrap: wrap; gap:6px}
-.tag{font-size:12px; padding:2px 8px; border:1px solid var(--border); border-radius:999px; color: var(--muted)}
 
-.proj-preview {width: 100%; border-radius: 8px; margin-bottom: 8px; border: 1px solid var(--border)}
+.navbar {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  margin-bottom: 32px;
+  padding: 16px 0;
+}
 
-.aside-card{border:1px solid var(--border); background: var(--card); border-radius: 12px; padding: 14px}
-.list{margin: 8px 0 0; padding:0; list-style:none}
-.list li{margin: 6px 0}
-.list a{color: var(--link)}
+.navbar ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
 
-a{color: blue var(--link)}
-footer{margin-top:48px; color: var(--muted); font-size: 14px}
+.navbar a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: var(--link);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--card);
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.2em;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--link);
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.skills,
+.experience,
+.education {
+  margin-bottom: 18px;
+}
+
+.skills ul,
+.experience ul,
+.education ul,
+.certifications ul {
+  padding-left: 18px;
+}
+
+.certifications ul {
+  list-style: disc;
+}
+
+.projects {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.project-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.15em;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: 0.98em;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--link);
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin: 18px 0;
+}
+
+.download-cv {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 18px;
+  background: var(--link);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.download-cv:hover {
+  background: #174ea6;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1em;
+  margin-top: 48px;
+}
+
+@media (max-width: 700px) {
+  .wrap {
+    padding: 16px 4px 48px;
+  }
+
+  .projects {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90vw;
+    min-width: 220px;
+    max-width: 340px;
+  }
+
+  .navbar ul {
+    gap: 16px;
+  }
+}
