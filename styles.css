@@ -25,17 +25,19 @@ body {
   color: var(--fg);
 }
 
-.wrap {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 32px 20px 72px;
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  color: #222;
 }
 
 .navbar {
-  background: var(--card);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
+  max-width: 900px;
   padding: 16px 0;
 }
 
@@ -49,7 +51,7 @@ body {
 }
 
 .navbar a {
-  color: var(--muted);
+  color: #666;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1em;
@@ -57,7 +59,7 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--link);
+  color: #2563eb;
 }
 
 .hero {
@@ -70,30 +72,36 @@ body {
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid var(--border);
-  background: var(--card);
+  border: 2px solid #e2e8f0;
+  background: #fff;
   margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .hero h1 {
   font-size: 2.5em;
   margin: 0 0 10px 0;
+  font-weight: 700;
 }
 
 .hero p {
-  color: var(--muted);
+  color: #666;
   font-size: 1.2em;
 }
 
 section {
   margin-bottom: 48px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
   font-size: 1.5em;
-  color: var(--link);
+  color: #2563eb;
   margin-bottom: 18px;
   text-align: left;
+  font-weight: 700;
 }
 
 .skills,
@@ -121,18 +129,25 @@ h2 {
 }
 
 .project-card {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: #fff;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   padding: 20px;
   width: 260px;
   text-align: center;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
 }
 
-.project-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 .project-card img {
@@ -140,29 +155,71 @@ h2 {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid var(--border);
+  border: 1px solid #e2e8f0;
   margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .project-card h3 {
   margin: 0 0 8px 0;
   font-size: 1.15em;
+  font-weight: 600;
 }
 
 .project-card p {
-  color: var(--muted);
+  color: #666;
   font-size: 0.98em;
   margin-bottom: 10px;
 }
 
 .project-card a {
-  color: var(--link);
+  color: #2563eb;
   text-decoration: none;
   font-weight: 500;
+  transition: text-decoration 0.2s;
 }
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contact {
@@ -170,9 +227,10 @@ h2 {
 }
 
 .contact a {
-  color: var(--link);
+  color: #2563eb;
   text-decoration: none;
   margin: 0 8px;
+  font-weight: 500;
 }
 
 .contact a:hover {
@@ -187,7 +245,7 @@ h2 {
   display: inline-block;
   margin-top: 12px;
   padding: 8px 18px;
-  background: var(--link);
+  background: #2563eb;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -201,14 +259,14 @@ h2 {
 
 footer {
   text-align: center;
-  color: var(--muted);
+  color: #666;
   font-size: 1em;
   margin-top: 48px;
 }
 
 @media (max-width: 700px) {
-  .wrap {
-    padding: 16px 4px 48px;
+  section {
+    padding: 0 8px;
   }
 
   .projects {

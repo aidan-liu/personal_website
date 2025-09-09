@@ -1,98 +1,99 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aidan Liu</title>
-  <meta name="description" content="Personal website of Aidan Liu — projects, writing, and contact." />
-  <meta property="og:title" content="Aidan Liu" />
-  <meta property="og:description" content="Projects, writing, and contact." />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <img class="avatar" src="profile.jpg" alt="Photo of Aidan Liu" />
-      <div>
-        <h1>Aidan Liu</h1>
-        <p class="subtitle">CS @ UT Austin • SWE Intern @ Cytrence
-          <br>
-          Contact me: aidanliu2023@gmail.com
+    <header class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section id="hero" class="hero fade-in">
+      <img src="https://jeffreybennet.com/images/user.png" alt="Profile" class="profile-img">
+      <h1>Hi! I'm Jeffrey Bennet</h1>
+      <p>Software Engineer & Problem Solver</p>
+    </section>
 
-
-
-        </p>
-  <header class="navbar">
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#work">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-          I currently work as a software engineering intern at Cytrence, where I contribute to building innovative computer vision solutions.
-  <section id="hero" class="hero">
-    <img src="profile.jpg" alt="Aidan Liu" class="profile-img">
-    <h1>Hi! I'm Aidan Liu</h1>
-    <p>Software Engineer & Problem Solver</p>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am Aidan Liu, a passionate developer with a love for technology and creative problem-solving. I enjoy building impactful solutions and learning new skills.
-    </p>
-    <div class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>JavaScript, Python, HTML, CSS</li>
-        <li>React, Node.js</li>
-        <li>Cloud: AWS, Azure</li>
-        <li>UI/UX Design</li>
-      </ul>
-    </div>
-    <div class="experience">
-      <h3>Experience</h3>
-      <ul>
-        <li>Software Engineer Intern at XYZ</li>
-        <li>Freelance Web Developer</li>
-      </ul>
-    </div>
-    <div class="education">
-      <h3>Education</h3>
-      <ul>
-        <li>B.S. in Computer Science</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="certifications" class="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Microsoft: Azure Fundamentals</li>
-      <li>Google Cloud: Introduction to Generative AI</li>
-      <li>Databricks: Lakehouse Fundamentals</li>
-    </ul>
-  </section>
-
-  <section id="work" class="work">
-    <h2>My Work</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="me1.jpg" alt="Project 1">
-        <h3>Project One</h3>
-        <p>A web app for organizing tasks and assignments. Built with React and Firebase.</p>
-        <a href="#" target="_blank">View Project</a>
+    <section id="about" class="about fade-in">
+      <h2>About Me</h2>
+      <p>
+        I am Jeffrey Bennet, a computer science student at The University of Texas at Austin. I am passionate about problem-solving and using technology to make a positive impact on the world. I have a strong foundation in mathematics, iOS development, and object-oriented programming. I am also proficient in a variety of programming languages and frameworks, including Java, Python, Swift, SQL, PySpark, Azure Data Lake, Azure Data Warehouse, Databricks, AWS, Firebase, APIs, Microsoft Office, Xcode, Figma, and Git.
+      </p>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>Java, Python, Swift, SQL, HTML, JavaScript, CSS</li>
+          <li>Azure, AWS</li>
+          <li>Designing Web/App interfaces</li>
+        </ul>
       </div>
-      <div class="project-card">
-        <img src="me2.jpg" alt="Project 2">
-        <h3>Project Two</h3>
-        <p>An award-winning hackathon project focused on sustainability and plant growth.</p>
+      <div class="experience">
+        <h3>Experience</h3>
+        <ul>
+          <li>Data Engineering & Data Science Intern at Kelly Services</li>
+          <li>Team Member at Whataburger</li>
+        </ul>
+      </div>
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          <li>B.S. in Computer Science, UT Austin</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications fade-in">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Microsoft: Azure Fundamentals (AZ-900)</li>
+        <li>Google Cloud: Introduction to Generative AI</li>
+        <li>Microsoft: Introduction to Programming Using Java (MTA: 98-388)</li>
+        <li>Databricks: Lakehouse Fundamentals</li>
+      </ul>
+    </section>
+
+    <section id="work" class="work fade-in">
+      <h2>My Work</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="https://jeffreybennet.com/images/work-2.png" alt="MyNexus">
+          <h3>MyNexus</h3>
+          <p>A fully functional calendar app that centralizes all of a student's assignments. Implements numerous APIs, databases, and libraries. UI/UX designed from scratch.</p>
+          <a href="https://www.behance.net/gallery/159226079/MyNexus" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="https://jeffreybennet.com/images/work-3.png" alt="SeedWise">
+          <h3>SeedWise</h3>
+          <p>Award-winning hackathon project focused on sustainability. Reduces global carbon emissions by enabling people to grow plants in their own backyards.</p>
+          <a href="https://www.behance.net/gallery/166194241/SeedWise" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="https://jeffreybennet.com/images/work-1.png" alt="This Website">
+          <h3>This Website!</h3>
+          <p>Designed from scratch using HTML, JavaScript, and CSS. Hosted on Firebase and Google Cloud. UI/UX designed by hand.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:jeffreybbennet06@gmail.com">jeffreybbennet06@gmail.com</a></p>
+      <p>Phone: (817) 789-5021</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/people/Jeffrey-Bennet/pfbid02P2cjtfe9oqEnGw3oTdetMtkC3JnesPiDaa4nCoYybthLLYZFTCQUXHSKhimDqA3vl/" aria-label="Facebook" target="_blank">Facebook</a>
+        <a href="https://www.behance.net/jeffreybbennet" aria-label="Behance" target="_blank">Behance</a>
+        <a href="https://www.instagram.com/jeffreybbennet/" aria-label="Instagram" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/jeffreybennet/" aria-label="LinkedIn" target="_blank">LinkedIn</a>
+      </div>
+      <a href="https://jeffreybennet.com/images/Jeffrey%20Resume.pdf" class="download-cv" target="_blank">Download CV</a>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Jeffrey Bennet. All rights reserved.</p>
+    </footer>
         <a href="#" target="_blank">View Project</a>
       </div>
       <div class="project-card">
