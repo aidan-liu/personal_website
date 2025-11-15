@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Aidan Liu</title>
+    <style>
+      :root {
+        --background-color: #fff;
+        --text-color: #111;
+        --card-border-color: #e0e0e0;
+        --card-shadow-color: rgba(0, 0, 0, 0.08);
+      }
+      body {
+        background: var(--background-color);
+        color: var(--text-color);
+        font-family: "Fira Code", monospace;
+        margin: 0;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+      .wrap {
+        margin: 0 auto;
+        max-width: 960px;
+      }
+      header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+      a {
+        color: var(--text-color);
+      }
+      .about-hero {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+      .about-photo {
+        border-radius: 1.5rem;
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+        flex: 0 0 360px;
+        height: auto;
+        width: 360px;
+      }
+      .about-copy {
+        flex: 1;
+        min-width: 280px;
+      }
+      .about-copy p {
+        line-height: 1.7;
+      }
+      .about-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .about-card {
+        border: 1px solid var(--card-border-color);
+        border-radius: 1rem;
+        box-shadow: 0 15px 35px var(--card-shadow-color);
+        padding: 1.5rem;
+      }
+      .about-card h3 {
+        margin-top: 0;
+      }
+      .hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1.5rem 0 2.5rem;
+      }
+      .hero-tags span {
+        border: 1px solid var(--text-color);
+        border-radius: 999px;
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+        padding: 0.35rem 0.9rem;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>About Aidan</h1>
+        <a href="index.html">Back to Home</a>
+      </header>
+      <div class="about-hero">
+        <img
+          class="about-photo"
+          src="images/SAM08423.jpg"
+          alt="Aidan exploring the world"
+        />
+        <div class="about-copy">
+          <p>
+            Hello and thank you for visiting my portfolio. I’m Aidan, a software
+            engineer who is chasing meaningful growth. I’m studying Computer
+            Science at UT Austin, blending engineering with business instincts
+            as I work on AI-assisted grading initiatives like CodeAssist.
+          </p>
+          <p>
+            I’m naturally curious and grounded in the belief that success comes
+            from staying hungry, especially in failure. I like to keep things
+            interesting by saying yes to bold ideas, taking ownership, and
+            chasing opportunities that help me level up. But most importantly, I
+            care deeply about being a strong communicator and teammate. Some of
+            the best work I’ve done came from honest conversations, shared wins,
+            and figuring things out together in the messy middle.
+          </p>
+          <p>
+            Outside of work, you’ll find me deep in NBA fantasy analytics,
+            mentoring younger engineers, or reflecting on how to live an
+            exciting life. Traveling, studying abroad, and getting lost in new
+            cities opened my eyes to fresh perspectives—and confirmed that
+            exploration is core to how I grow, recharge, and find meaning.
+          </p>
+          <p>
+            If you’re looking for someone who’s not just here to “do the job”
+            but to challenge, build, and bring energy into any team—let’s
+            connect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

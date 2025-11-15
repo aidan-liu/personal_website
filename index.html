@@ -1,177 +1,1520 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aidan Liu - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">Aidan</div>
-    <ul class="nav-links">
-      <li style="--item-index: 1"><a href="#home">Home</a></li>
-      <li style="--item-index: 2"><a href="#about">About</a></li>
-      <li style="--item-index: 3"><a href="#portfolio">Projects</a></li>
-      <li style="--item-index: 4"><a href="#leadership">Leadership</a></li>
-      <li style="--item-index: 5"><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="gradient-bg"></div>
-
-  <main class="container">
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h2 class="subtitle">Software Engineer</h2>
-        <h1 class="hero-title">Hi! I'm <span class="highlight">Aidan</span><br>Liu</h1>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I am Aidan Liu, a computer science student at The University of Texas at Austin with a 3.6 GPA, expected to graduate in May 2027. I am passionate about software engineering, machine learning, and using technology to solve real-world problems. I have extensive experience in full-stack development, AI/ML, and cloud computing.</p>
-      
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li><strong>Languages:</strong> C/C++, Java, C#, Rust, Golang, Python, JavaScript/TypeScript, HTML/CSS, Assembly, Ruby</li>
-            <li><strong>Frameworks:</strong> React, React Native, Next.js, Express, Flask, Spring, TensorFlow, PyTorch</li>
-            <li><strong>Technologies:</strong> AWS, Google Cloud, Docker, PostgreSQL, SQLite, Firebase, OpenCV, CUDA</li>
-            <li><strong>Tools:</strong> Git, UNIX/Linux, Hadoop, Spark, Kubernetes, REST APIs</li>
-          </ul>
-        </div>
-        
-        <div class="info-card">
-          <h3>Experience</h3>
-          <ul>
-            <li><strong>Cytrence Technologies</strong> - Software Engineering Intern (Jun 2024 - Aug 2025)</li>
-            <li><strong>UT CS Department</strong> - Research Intern under Dr. Kia Teymourian (Jan 2025 - Present)</li>
-            <li>Specialized in AI/ML, computer vision, and automation frameworks</li>
-            <li>Reduced testing time by 50% through automated solutions</li>
-          </ul>
-        </div>
-        
-        <div class="info-card">
-          <h3>Education</h3>
-          <ul>
-            <li><strong>University of Texas at Austin</strong></li>
-            <li>B.S. Computer Science, GPA: 3.6/4.0</li>
-            <li>Expected Graduation: May 2027</li>
-            <li><strong>Coursework:</strong> Operating Systems, Data Structures, Algorithms, AI/ML, Cloud Computing, Cryptography</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadership" class="section">
-      <h2>Leadership & Activities</h2>
-      <div class="cert-grid">
-        <div class="cert-card">
-          <h3>RE:SOUND ACAPELLA</h3>
-          <p>Tenor Lead (Jan 2025 - May 2025)</p>
-          <small>Competed in Acapalooza and hosted semesterly concerts. Volunteered at 10+ retirement homes.</small>
-        </div>
-        <div class="cert-card">
-          <h3>KOINONIA I.M. VOLLEYBALL</h3>
-          <p>Team Captain (Aug 2024 - May 2025)</p>
-          <small>Semi-Finalist in UT I.M. games. Coordinated team of 10 players with logistics and scheduling.</small>
-        </div>
-        <div class="cert-card">
-          <h3>COMPETITION WINNER</h3>
-          <p>1st Place out of 100 Teams</p>
-          <small>COE Competition using ML algorithms and data analytics on gaming datasets.</small>
-        </div>
-        <div class="cert-card">
-          <h3>RESEARCH EXPERIENCE</h3>
-          <p>Academic Research Intern</p>
-          <small>Developing REST APIs, front-end dashboards, and implementing AI/ML models with 90% accuracy.</small>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="me1.jpg" alt="Riot Games ML Model">
-          <div class="project-content">
-            <h3>Riot Games Model Prediction</h3>
-            <p>Benchmarked deep learning ML algorithms on 5000+ TFT matches using Scikit-learn, Pandas, NumPy, and Hadoop. Placed 1st out of 100 teams in COE competition with 30% accuracy optimization using grid search CV.</p>
-            <a href="https://github.com/aidan-liu" target="_blank" class="project-link">View on GitHub</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <img src="me2.jpg" alt="Beta Climbs App">
-          <div class="project-content">
-            <h3>Beta Climbs - Full Stack Climbing App</h3>
-            <p>Open-source React Native/Expo mobile app with responsive Flexbox UI, microservices backend, and NoSQL integration. Built Python TensorFlow Keras pipeline with ResNet50 CNN for computer vision processing.</p>
-            <a href="https://github.com/aidan-liu" target="_blank" class="project-link">View on GitHub</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <img src="me3.jpg" alt="UI Automation Framework">
-          <div class="project-content">
-            <h3>AI-Powered UI Automation</h3>
-            <p>Implemented UI automation combining Gemma-3 multimodal ML with computer vision to interpret screen captures and generate actionable UI steps. Achieved 20% accuracy improvement using GPU optimization on Nvidia Jetson and AWS.</p>
-            <a href="https://github.com/aidan-liu" target="_blank" class="project-link">View Project</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <p><strong>aidanliu2023@gmail.com</strong></p>
-        <p><strong>(832) 955-2419</strong></p>
-        
-        <div class="social-links">
-          <a href="https://linkedin.com/in/aidan-liu-ut" target="_blank">LinkedIn</a>
-          <a href="https://github.com/aidan-liu" target="_blank">GitHub</a>
-          <a href="https://aidan-liu.github.io/personal_website/" target="_blank">Portfolio</a>
-        </div>
-        
-        <a href="#" class="download-btn" target="_blank">Download Resume</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Aidan Liu. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Animate elements on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="generator" content="Gatsby 4.25.9" />
+    <style
+      data-href="/styles.5ce18645096646abfc43.css"
+      data-identity="gatsby-global-css"
+    >
+      @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap);
+      .leftPanel {
+        min-height: 18rem;
+      }
+      .profile-pic {
+        display: block;
+      }
+      .imagePanel {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      }
+      .arrows {
+        left: 0;
+        pointer-events: none;
+      }
+      .arrow,
+      .arrows {
+        align-items: center;
+      }
+      .arrow {
+        -webkit-appearance: none;
+        appearance: none;
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #4b1ccd;
+        display: inline-flex;
+        font-size: 2.2rem;
+        height: auto;
+        justify-content: center;
+        min-height: 0;
+        min-width: 0;
+        outline: none;
+        padding: 0;
+        pointer-events: auto;
+        transition:
+          color 0.2s,
+          transform 0.2s;
+        width: auto;
+      }
+      .arrow:focus,
+      .arrow:hover {
+        background: none !important;
+        color: #b95117;
+        transform: scale(1.15);
+      }
+      .iconList {
+        min-height: 50px;
+      }
+      .theme-switch-wrapper {
+        align-items: center;
+        display: flex;
+        gap: 0.6rem;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+      }
+      .theme-switch-wrapper span.label {
+        color: var(--text-color);
+        font-family:
+          Fira Code,
+          monospace;
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+      .dark-theme {
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+      .dark-theme .icon a,
+      .dark-theme .title {
+        color: #fff;
+      }
+      .back-button {
+        cursor: pointer;
+        left: 20px;
+        position: absolute;
+        top: 20px;
+        z-index: 10;
+      }
+      .back-button svg {
+        color: #333;
+        transition: color 0.3s ease;
+      }
+      .back-button:hover svg {
+        color: #b95117;
+      }
+      @media (max-width: 768px) {
+        .page {
+          align-items: center;
+          flex-direction: column;
+          margin-top: 2rem;
+          padding: 1rem;
         }
-      });
-    }, observerOptions);
+        .leftPanel {
+          justify-content: flex-start;
+          margin-bottom: 2rem;
+          margin-right: 0;
+          max-width: 400px;
+        }
+        .leftPanel,
+        .rightPanel {
+          padding: 1rem;
+          width: 100%;
+        }
+        .iconList {
+          flex-direction: row;
+          margin-top: 1rem;
+        }
+        .profile-pic {
+          height: auto;
+          width: 100%;
+        }
+      }
+      @media (max-width: 480px) {
+        .icon {
+          font-size: 1.5rem;
+          height: 40px;
+          width: 40px;
+        }
+        .profile-pic {
+          height: auto;
+          width: 100%;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        font-family:
+          Fira Code,
+          monospace;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+      .container {
+        zoom: 1;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 20px;
+      }
+      header {
+        align-items: flex-end;
+        display: flex;
+        height: 12rem;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .header-left {
+        flex: 0 0 40%;
+        font-size: 4rem;
+      }
+      .header-right {
+        flex: 0 0 60%;
+        font-size: 1.8rem;
+        padding-bottom: 0.6rem;
+        padding-left: 4.2rem;
+      }
+      .vertical-line {
+        background-color: var(--text-color);
+        height: 1px;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 34rem;
+      }
+      .content {
+        align-items: start;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+      }
+      .nav-section {
+        flex: 1 1;
+        padding-right: 20px;
+        position: relative;
+        width: 300px;
+      }
+      .nav-section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-section li {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+        position: relative;
+      }
+      .nav-section li:before {
+        content: "\2022";
+        font-size: 1.4rem;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .icon-column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 1rem;
+        padding-top: 2rem;
+      }
+      .icon-column > * {
+        color: var(--text-color);
+        font-size: 3rem;
+        margin: 10px 0;
+      }
+      .photo-section {
+        flex: 1 1;
+        padding-left: 1rem;
+      }
+      .photo img {
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 1.7;
+        margin-top: 10px;
+      }
+      nav {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav li {
+        margin: 15px 0;
+      }
+      nav a {
+        color: var(--text-color);
+        font-size: 1.2em;
+      }
+      nav a:hover {
+        color: var(--link-hover-color);
+      }
+      .photo {
+        margin-top: 1rem;
+      }
+      .photo img {
+        border-radius: 20px;
+        max-width: 80%;
+      }
+      .vertical-line2 {
+        background-color: var(--text-color);
+        height: 1px;
+        margin-top: 20px;
+        width: 66rem;
+      }
+      .projects {
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+        width: 100%;
+      }
+      .experience {
+        margin-top: 0;
+      }
+      .project {
+        padding: 20px 0;
+      }
+      .icon a {
+        color: var(--text-color);
+      }
+      .icon:hover {
+        transform: scale(1.1);
+      }
+      .dark-theme {
+        --background-color: #16213e;
+        --text-color: #eab9c9;
+      }
+      .theme-switch-wrapper {
+        position: absolute;
+        right: 5rem;
+        top: 3rem;
+      }
+      .switch {
+        display: inline-block;
+        height: 34px;
+        margin: 0;
+        position: relative;
+        width: 60px;
+      }
+      .switch input {
+        height: 0;
+        opacity: 0;
+        width: 0;
+      }
+      .slider {
+        background-color: #ccc;
+        border-radius: 34px;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+      .slider,
+      .slider:before {
+        position: absolute;
+        transition: 0.4s;
+      }
+      .slider:before {
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        width: 26px;
+      }
+      input:checked + .slider {
+        background-color: #4b1ccd;
+      }
+      input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+      .switch input:focus + .slider {
+        box-shadow: none;
+      }
+      .slider.round {
+        border-radius: 34px;
+      }
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        header {
+          align-items: center;
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+        }
+        .header-left,
+        .header-right {
+          flex: 0 0 100%;
+          padding: 10px 0;
+        }
+        .header-left {
+          font-size: 3rem;
+        }
+        .header-right {
+          font-size: 1.5rem;
+          padding-left: 0;
+        }
+        .content {
+          align-items: center;
+          flex-direction: column;
+        }
+        .nav-section {
+          margin-bottom: 20px;
+          padding-right: 0;
+          width: 100%;
+        }
+        .icon-column {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          justify-content: center;
+          padding: 1rem 0;
+        }
+        .photo-section {
+          padding: 0;
+        }
+        .photo img {
+          max-width: 100%;
+          width: auto;
+        }
+        .vertical-line,
+        .vertical-line2 {
+          display: none;
+        }
+        .projects {
+          width: 100%;
+        }
+        .project {
+          padding: 10px;
+        }
+        .icon-column > * {
+          font-size: 2rem;
+        }
+        h1 {
+          font-size: 2em;
+        }
+        nav a {
+          font-size: 1em;
+        }
+        .theme-switch-wrapper {
+          right: 1rem;
+          top: 1rem;
+        }
+        .hero-feature {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-feature-details ul {
+          margin-left: 0;
+          text-align: left;
+        }
+      }
+      html {
+        font-size: 1.1rem;
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      a {
+        color: var(--link-color);
+      }
+      a:hover {
+        color: var(--link-hover-color);
+      }
+      .page {
+        display: flex;
+        flex: 1 1;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5rem auto 0;
+        max-width: 1200px;
+        padding: 2rem;
+      }
+      .leftPanel,
+      .rightPanel {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .leftPanel {
+        align-items: center;
+        flex: 1 1;
+        flex-direction: column;
+        margin-right: 2rem;
+        max-width: 350px;
+        min-height: 0;
+        padding: 2rem;
+        width: 30%;
+      }
+      .leftPanel,
+      .rightPanel {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .rightPanel {
+        flex: 2 1;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 65%;
+      }
+      .profile-pic {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        object-fit: cover;
+      }
+      .imagePanel,
+      .profile-pic {
+        height: auto;
+        max-width: 300px;
+        width: 100%;
+      }
+      .imagePanel {
+        overflow: hidden;
+        position: relative;
+      }
+      .arrows {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+      .arrow {
+        background-color: rgba(0, 0, 0, 0.6);
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        z-index: 1;
+      }
+      .arrow:hover {
+        transform: scale(1.2);
+      }
+      .iconList {
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+      }
+      .icon,
+      .iconList {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .icon {
+        cursor: pointer;
+        height: 50px;
+        transition: transform 0.2s;
+        width: 50px;
+      }
+      .icon a {
+        align-items: center;
+        color: #000;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+      }
+      .title {
+        border-bottom: 0.125rem solid var(--text-color);
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+      .typewriter-line {
+        align-items: center;
+        color: var(--link-hover-color);
+        display: inline-flex;
+        font-size: 2rem;
+        font-weight: 500;
+        gap: 0.4rem;
+        min-height: 2.5rem;
+      }
+      .typewriter-cursor {
+        animation: blink 1s step-start infinite;
+        color: #d43a11;
+        font-weight: 700;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      :root {
+        --background-color: #fff;
+        --text-color: #000;
+        --link-color: #00e;
+        --link-hover-color: #b95117;
+        --background-hover: #f4e8c9;
+      }
+      .dark-theme {
+        --background-color: #1a1a1a;
+        --text-color: #f1dee5;
+        --link-color: #a5d7e8;
+        --link-hover-color: #a5d7e8;
+        --background-hover: #e5b0e4;
+      }
+      .theme-toggle {
+        background-color: var(--link-color);
+        border: none;
+        border-radius: 5px;
+        color: var(--text-color);
+        cursor: pointer;
+        font-family:
+          Fira Code,
+          monospace;
+        padding: 10px 20px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 1000;
+      }
+      .theme-toggle:hover {
+        background-color: var(--link-hover-color);
+      }
+      .tabbed-interface {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+      .tabs {
+        border-right: 1px solid var(--text-color);
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+      }
+      .tabs button {
+        background-color: var(--background-color);
+        border: none;
+        border-bottom: 1px solid var(--text-color);
+        color: var(--text-color);
+        cursor: pointer;
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-family:
+          Fira Code,
+          monospace;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: left;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease;
+      }
+      .tabs button.active-tab {
+        background-color: var(--background-hover);
+        font-weight: 700;
+      }
+      .text-image-container {
+        align-items: flex-start;
+        display: flex;
+        height: 22rem;
+        overflow-y: auto;
+        padding-left: 2rem;
+        padding-top: 2rem;
+      }
+      .image-stack {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: center;
+        padding-top: 1rem;
+      }
+      .text-content {
+        flex: 2 1;
+        padding-right: 1rem;
+      }
+      .text-content h2 {
+        color: var(--text-color);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero-feature {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--text-color);
+        border-radius: 1.5rem;
+        display: flex;
+        gap: 1.5rem;
+        margin: 2rem 0 3rem;
+        padding: 1.5rem;
+      }
+      .hero-feature-image {
+        flex: 0 0 260px;
+      }
+      .hero-feature-image img {
+        border-radius: 1rem;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        width: 100%;
+      }
+      .hero-feature-details {
+        flex: 1;
+      }
+      .hero-feature-details h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        margin-bottom: 0.6rem;
+        text-transform: uppercase;
+      }
+      .hero-feature-details p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+      }
+      .hero-tags span {
+        border: 1px solid var(--text-color);
+        border-radius: 999px;
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+        padding: 0.35rem 0.9rem;
+        text-transform: uppercase;
+      }
+      .social-inline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+      .social-inline a {
+        border-bottom: 1px solid transparent;
+        color: var(--link-color);
+        font-family:
+          Fira Code,
+          monospace;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+      }
+      .social-inline a:hover {
+        border-color: var(--link-color);
+      }
+      .hero-feature-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .hero-feature-meta nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .hero-feature-meta nav li + li {
+        margin-top: 0.3rem;
+      }
+      .hero-feature-meta nav a {
+        color: var(--text-color);
+      }
+      .hero-feature-meta nav a:hover {
+        color: var(--link-hover-color);
+      }
+      .hero-feature-meta .feature-icons {
+        display: flex;
+        gap: 1rem;
+      }
+      .about-link {
+        margin-top: 1rem;
+      }
+      .hero-feature {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--text-color);
+        border-radius: 1.5rem;
+        display: flex;
+        gap: 1.5rem;
+        margin: 2rem 0 3rem;
+        padding: 1.5rem;
+      }
+      .hero-feature-image {
+        flex: 0 0 260px;
+      }
+      .hero-feature-image img {
+        border-radius: 1rem;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        width: 100%;
+      }
+      .hero-feature-details {
+        flex: 1;
+      }
+      .hero-feature-details h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        margin-bottom: 0.6rem;
+        text-transform: uppercase;
+      }
+      .hero-feature-details ul {
+        list-style: disc;
+        margin: 0 0 0.8rem 1.3rem;
+        padding: 0;
+      }
+      .hero-feature-details ul li {
+        line-height: 1.5;
+        margin-bottom: 0.3rem;
+      }
+      .brief-description {
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+      .text-content p {
+        line-height: 1.2;
+        margin-top: 0;
+      }
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 1rem 0;
+      }
+      .project-links a {
+        border: 1px solid var(--text-color);
+        border-radius: 999px;
+        color: var(--text-color);
+        padding: 0.35rem 0.9rem;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease;
+      }
+      .project-links a:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+      }
+      .tech-stack {
+        list-style-type: none;
+        margin-top: 1rem;
+        padding: 0;
+      }
+      .tech-stack li {
+        background-color: var(--background-hover);
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        padding: 0.4rem 0.8rem;
+      }
+      .text-image-container img {
+        align-self: center;
+        border: 1px solid var(--text-color);
+        flex: 1 1;
+        height: 16rem;
+        object-fit: cover;
+        width: 16rem;
+      }
+      .image-placeholder {
+        border: 1px dashed var(--text-color);
+        border-radius: 1rem;
+        color: var(--text-color);
+        min-height: 16rem;
+        padding: 2rem;
+        text-align: center;
+        width: 16rem;
+      }
+      .panda-path-images img {
+        height: 12rem;
+        width: 12rem;
+      }
+      .about {
+        margin: 3rem 0;
+        width: 100%;
+      }
+      .about-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-top: 1.5rem;
+      }
+      .about-card {
+        border: 1px solid var(--text-color);
+        border-radius: 1rem;
+        padding: 1.25rem;
+      }
+      .about-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .about-card p {
+        line-height: 1.5;
+      }
+      @media (max-width: 768px) {
+        .page {
+          align-items: center;
+          flex-direction: column;
+          margin-top: 2rem;
+          padding: 1rem;
+        }
+        .leftPanel {
+          justify-content: flex-start;
+          margin-bottom: 2rem;
+          margin-right: 0;
+          max-width: 400px;
+        }
+        .leftPanel,
+        .rightPanel {
+          padding: 1rem;
+          width: 100%;
+        }
+        .iconList {
+          flex-direction: row;
+          margin-top: 1rem;
+        }
+        .profile-pic {
+          height: auto;
+          width: 100%;
+        }
+        .tabbed-interface {
+          flex-direction: column;
+        }
+        .tech-stack {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .tech-stack li {
+          margin-bottom: 0.5rem;
+          margin-right: 0.5rem;
+        }
+        .tabs {
+          border-bottom: 1px solid var(--text-color);
+          display: flex;
+          flex-direction: row;
+          overflow-x: auto;
+          width: 100%;
+        }
+        .tabs,
+        .tabs button {
+          border-right: none;
+        }
+        .tabs button {
+          border-bottom: none;
+          border-left: 1px solid var(--text-color);
+          border-top: 1px solid var(--text-color);
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 10px;
+          text-align: center;
+          white-space: nowrap;
+          width: auto;
+        }
+        .tabs button:first-child {
+          border-left: none;
+        }
+        .text-image-container {
+          align-items: center;
+          flex-direction: column;
+          height: auto;
+          overflow-y: auto;
+          padding: 1rem;
+        }
+        .image-stack {
+          flex-direction: row;
+          overflow-x: auto;
+        }
+        .image-stack::-webkit-scrollbar,
+        .text-image-container::-webkit-scrollbar {
+          height: 6px;
+          width: 6px;
+        }
+        .image-stack::-webkit-scrollbar-track,
+        .text-image-container::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .image-stack::-webkit-scrollbar-thumb,
+        .text-image-container::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 3px;
+        }
+        .image-stack::-webkit-scrollbar-thumb:hover,
+        .text-image-container::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+        .image-stack,
+        .text-image-container {
+          scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+          scrollbar-width: thin;
+        }
+        .text-content {
+          flex: 1 1;
+          padding: 0;
+          text-align: center;
+        }
+        .text-image-container img {
+          height: 12rem;
+          margin-bottom: 1rem;
+          width: 12rem;
+        }
+        .panda-path-images img {
+          height: 8rem;
+          width: 8rem;
+        }
+        .icon-column {
+          flex-direction: row;
+          gap: 1.5rem;
+          padding: 1rem 0;
+        }
+      }
+      @media (max-width: 480px) {
+        .icon {
+          font-size: 1.5rem;
+          height: 40px;
+          width: 40px;
+        }
+        .profile-pic {
+          height: auto;
+          width: 100%;
+        }
+        .text-image-container img {
+          height: 10rem;
+          width: 10rem;
+        }
+        .panda-path-images img {
+          height: 6rem;
+          width: 6rem;
+        }
+        .icon-column {
+          gap: 1rem;
+        }
+      }
+      :root {
+        --bg-color: #fff;
+        --text-color: #333;
+        --card-bg-color: #fff;
+        --card-border-color: #e0e0e0;
+        --card-shadow-color: rgba(0, 0, 0, 0.1);
+      }
+      .dark-theme {
+        --bg-color: #181818;
+        --text-color: #e4e4e4;
+        --card-bg-color: #181818;
+        --card-border-color: #f1dee5;
+        --card-shadow-color: hsla(0, 0%, 100%, 0.05);
+      }
+      .experience-section {
+        color: var(--text-color);
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 2rem;
+      }
+      .experience-item {
+        background-color: var(--card-bg-color);
+        border: 1px solid var(--card-border-color);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px var(--card-shadow-color);
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+      }
+      .experience-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+      .experience-item h3,
+      h2 {
+        color: var(--text-color);
+      }
+      .experience-item h3 {
+        background: none;
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      .text-container {
+        flex: 1 1;
+      }
+      .company-name {
+        color: var(--text-color);
+        font-size: 0.95rem;
+        font-style: italic;
+        margin-bottom: 0.8rem;
+      }
+      .duration {
+        font-weight: 700;
+      }
+      .description,
+      .duration {
+        color: var(--text-color);
+      }
+      .description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-top: 1rem;
+      }
+      .company-logo {
+        height: auto;
+        max-width: 150px;
+        object-fit: contain;
+      }
+      .logo {
+        height: auto;
+        margin-left: 5px;
+        margin-right: 20px;
+        width: 100px;
+      }
+      .company-logo[src*="atpco"] {
+        max-width: 7rem;
+      }
+      .company-logo[src*="cytrence"] {
+        margin-left: -0.6rem;
+        max-width: 9rem;
+      }
+      @media (max-width: 768px) {
+        .experience-header {
+          display: block;
+          text-align: center;
+        }
+        .text-container {
+          margin-bottom: 1rem;
+          text-align: left;
+        }
+        .company-logo {
+          display: block;
+          height: auto;
+          margin: 0 auto;
+          max-width: 50%;
+        }
+        .experience-item {
+          display: block;
+        }
+      }
+    </style>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-E8DSGK3S04"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-E8DSGK3S04");
+    </script>
+  </head>
+  <body>
+    <div id="___gatsby" style="margin-top: 5rem">
+      <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
+        <div class="container">
+          <div class="theme-switch-wrapper">
+            <span class="label">Theme</span>
+            <label class="switch"
+              ><input type="checkbox" /><span class="slider round"></span
+            ></label>
+          </div>
+          <header>
+            <div class="header-left">
+              <p>Hi, I'm</p>
+              <p>Aidan Liu</p>
+            </div>
+            <div class="header-right">
+              <p class="typewriter-line">
+                <span id="typewriter-text"></span>
+                <span class="typewriter-cursor">|</span>
+              </p>
+            </div>
+          </header>
+          <div class="hero-feature">
+            <div class="hero-feature-image">
+              <img src="images/aidan.jpg" alt="Aidan Liu smiling" />
+            </div>
+            <div class="hero-feature-details">
+              <h3>Snapshot</h3>
+              <div class="hero-tags">
+                <span>CS @ UT Austin</span>
+                <span>CodeAssist Intern</span>
+                <span>Cytrence SWE</span>
+                <span>AI/ML · Automation</span>
+                <span>STEM Mentor</span>
+                <span>Java Coder</span>
+                <span>Singer</span>
+                <span>Full Stack Developer</span>
+                <span>Tennis Player</span>
+                <span>Junior</span>
+                <span>US Citizen</span>
+                <span>Team Player</span>
+                <span>Deep Thinker</span>
+                <span>Web Developer</span>
+              </div>
+              <div class="hero-feature-meta">
+                <div class="feature-icons">
+                  <a
+                    class="icon"
+                    href="https://www.linkedin.com/in/aidan-liu-ut/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 1024 1024"
+                      height="45"
+                      width="45"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                      ></path></svg
+                  ></a>
+                  <a
+                    class="icon"
+                    href="https://github.com/aidan-liu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 1024 1024"
+                      height="45"
+                      width="45"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                      ></path></svg
+                  ></a>
+                  <a
+                    class="icon"
+                    href="https://docs.google.com/document/d/1PFFhAYDJ4_eSVECv8yK0No6IMgUXJKqSYMhAtu73-fY/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 1024 1024"
+                      height="45"
+                      width="45"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M868 280h-72V144c0-17.7-14.3-32-32-32H260c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h504c17.7 0 32-14.3 32-32V512h72c17.7 0 32-14.3 32-32V312c0-17.7-14.3-32-32-32zm-136 568H292V168h368v144h72v536zm104-560h-40v-72h40v72zM344 464h280v48H344zm0 144h280v48H344zm0 144h280v48H344z"
+                      ></path></svg
+                  ></a>
+                </div>
+              </div>
 
-    document.querySelectorAll('.section, .project-card, .cert-card').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
-</body>
+              <div class="about-link">
+                <a href="about.html">Click here to learn more about me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+
+          <section class="projects" id="projects">
+            <p style="font-size: 2rem">Projects</p>
+            <div class="vertical-line2"></div>
+            <div class="tabbed-interface">
+              <div class="tabs" role="tablist">
+                <button
+                  type="button"
+                  class="active-tab tab-button"
+                  data-project="cytrence-vlm"
+                  role="tab"
+                >
+                  Cytrence VLM
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
+                  data-project="codeassist"
+                  role="tab"
+                >
+                  UT Code Assist
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
+                  data-project="monke"
+                  role="tab"
+                >
+                  Monke
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
+                  data-project="riot-ml"
+                  role="tab"
+                >
+                  Riot ML
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
+                  data-project="beta-climbs"
+                  role="tab"
+                >
+                  Beta Climbs
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
+                  data-project="arcado"
+                  role="tab"
+                >
+                  Arcado
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
+                  data-project="king-domino"
+                  role="tab"
+                >
+                  King Domino
+                </button>
+              </div>
+              <div class="text-image-container">
+                <div class="text-content">
+                  <h2 id="project-title"></h2>
+                  <p class="brief-description" id="project-summary"></p>
+                  <div id="project-description"></div>
+                  <div class="project-links" id="project-links"></div>
+                  <ul class="tech-stack" id="project-tech"></ul>
+                </div>
+                <div class="image-stack" id="project-images"></div>
+              </div>
+            </div>
+          </section>
+          <section class="experience" id="work-experience">
+            <p style="font-size: 2rem">Work Experience</p>
+            <div class="vertical-line2"></div>
+            <section class="experience-section">
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Software Engineering Intern</h3>
+                    <p class="company-name">
+                      UT Austin · CodeAssist |
+                      <span class="duration">Jan 2025 – Present</span>
+                    </p>
+                    <p class="description">
+                      Lead the full-stack build of the university’s AI-enabled
+                      grading platform. Deploy Python/C++/Go microservices in
+                      Docker + Kubernetes, wire Angular/React dashboards to
+                      Next.js/Express/Flask APIs, and integrate Gemma3, Claude,
+                      and ChatGPT to review essays. Automated CI/CD with Git,
+                      Jest, Pytest, and Mocker so professors ship safely every
+                      sprint.
+                    </p>
+                  </div>
+                  <img
+                    src="images/ut.png"
+                    alt="UT Austin logo"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Software Engineering Intern</h3>
+                    <p class="company-name">
+                      Cytrence Technologies |
+                      <span class="duration">Jun 2024 – Aug 2025</span>
+                    </p>
+                    <p class="description">
+                      Built a computer-vision UI automation system that
+                      interprets screenshots and generates UI flows. Fine-tuned
+                      PyTorch/TensorFlow models with CUDA, Unsloth, and QLoRA
+                      before deploying to AWS SageMaker, Azure, and Google
+                      Cloud. Operated Spark + Hadoop ETL pipelines to process
+                      massive datasets and presented model improvements to
+                      directors for roadmap decisions.
+                    </p>
+                  </div>
+                  <img
+                    src="images/cytrence.png"
+                    alt="Cytrence logo"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Part-time STEM Instructor</h3>
+                    <p class="company-name">
+                      Code Ninjas |
+                      <span class="duration">Jan 2020 – Aug 2023</span>
+                    </p>
+                    <p class="description">
+                      Taught middle school students C#, Python, Scratch,
+                      JavaScript, and Unity. Designed interactive lesson
+                      schematics and coordinated with management to cover busy
+                      tutoring shifts so every student received personalized
+                      attention and a fun on-ramp to software engineering.
+                    </p>
+                  </div>
+                  <img
+                    src="images/code_ninjas.png"
+                    alt="Code Ninjas logo"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="experience" id="community-involvement">
+            <p style="font-size: 2rem">Community Involvement</p>
+            <div class="vertical-line2"></div>
+            <section class="experience-section">
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">COE Competition Winner</h3>
+                    <p class="company-name">
+                      UT Austin College of Engineering |
+                      <span class="duration">2024</span>
+                    </p>
+                    <p class="description">
+                      Led the Riot Games Model Prediction project that
+                      benchmarked LightGBM/XGBoost pipelines on thousands of TFT
+                      matches using Scikit-learn, Pandas, NumPy, MATLAB, and
+                      Hadoop. Earned 1st place out of 100 teams at the COE
+                      competition.
+                    </p>
+                  </div>
+                  <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgODAnPgogIDxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nODAnIHJ4PSc4JyByeT0nOCcgZmlsbD0nIzVjMmQ5MScvPgogIDx0ZXh0IHg9JzEwMCcgeT0nNTAnIGZvbnQtZmFtaWx5PSdGaXJhIENvZGUsIG1vbm9zcGFjZScgZm9udC1zaXplPScyOCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPkNPRTwvdGV4dD4KPC9zdmc+"
+                    alt="COE award badge"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Automation Systems R&D</h3>
+                    <p class="company-name">
+                      Cytrence Applied Research |
+                      <span class="duration">2024 – 2025</span>
+                    </p>
+                    <p class="description">
+                      Explored end-to-end automation for UI testing, combining
+                      PyTorch/TensorFlow models, CUDA optimizations, and LoRaWAN
+                      data collection. Shared takeaways with senior engineers to
+                      improve internal tooling and data accuracy.
+                    </p>
+                  </div>
+                  <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgODAnPgogIDxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nODAnIHJ4PSc4JyByeT0nOCcgZmlsbD0nIzFmNGQ1ZScvPgogIDx0ZXh0IHg9JzEwMCcgeT0nNTAnIGZvbnQtZmFtaWx5PSdGaXJhIENvZGUsIG1vbm9zcGFjZScgZm9udC1zaXplPScyOCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPkF1dG9tYXRpb248L3RleHQ+Cjwvc3ZnPg=="
+                    alt="Automation badge"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">STEM Mentor</h3>
+                    <p class="company-name">
+                      Code Ninjas & Community |
+                      <span class="duration">2020 – 2023</span>
+                    </p>
+                    <p class="description">
+                      Partnered with management to expand tutoring coverage, ran
+                      workshops, and helped hundreds of students prototype their
+                      first C#/Python/Unity projects while emphasizing
+                      collaboration and creativity.
+                    </p>
+                  </div>
+                  <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgODAnPgogIDxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nODAnIHJ4PSc4JyByeT0nOCcgZmlsbD0nI2Q2NTc4MCcvPgogIDx0ZXh0IHg9JzEwMCcgeT0nNTAnIGZvbnQtZmFtaWx5PSdGaXJhIENvZGUsIG1vbm9zcGFjZScgZm9udC1zaXplPScyOCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPk1lbnRvcjwvdGV4dD4KPC9zdmc+"
+                    alt="Mentor badge"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div
+        id="gatsby-announcer"
+        style="
+          position: absolute;
+          top: 0;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        "
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
+    </div>
+    <script id="gatsby-script-loader">
+      /*<![CDATA[*/ window.pagePath = "/";
+      window.___webpackCompilationHash = "a20247cdddb80ebc716f"; /*]]>*/
+    </script>
+    <script id="gatsby-chunk-mapping">
+      /*<![CDATA[*/ window.___chunkMapping = {
+        app: ["/app-f9a9945b2fd533a76064.js"],
+        "component---src-pages-404-js": [
+          "/component---src-pages-404-js-e6afc75d9dfa0f2d4bbc.js",
+        ],
+        "component---src-pages-about-js": [
+          "/component---src-pages-about-js-5de77e90e80cec9f5ee2.js",
+        ],
+        "component---src-pages-community-experience-js": [
+          "/component---src-pages-community-experience-js-b2e1ba99b4064a4c0858.js",
+        ],
+        "component---src-pages-experience-js": [],
+        "component---src-pages-index-js": [
+          "/component---src-pages-index-js-906ba0482de712bd0c2d.js",
+        ],
+        "component---src-pages-projects-js": [
+          "/component---src-pages-projects-js-31c66546ee981d6c7b67.js",
+        ],
+        "component---src-pages-resume-js": [
+          "/component---src-pages-resume-js-04c214432d80f09a59e3.js",
+        ],
+        "component---src-pages-theme-toggle-button-js": [
+          "/component---src-pages-theme-toggle-button-js-4724b1fb689dccb1b26f.js",
+        ],
+      }; /*]]>*/
+    </script>
+    <script src="js/QSzaf58LXqPg.js" async=""></script>
+    <script src="js/pacAJzoBXMV9.js" async=""></script>
+    <script src="js/xQfaDU5MfSEn.js" async=""></script>
+    <script src="js/site.js"></script>
+  </body>
 </html>
