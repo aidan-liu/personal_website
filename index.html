@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="generator" content="Gatsby 4.25.9" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <style
       data-href="/styles.5ce18645096646abfc43.css"
       data-identity="gatsby-global-css"
@@ -610,6 +611,7 @@
         border-right: 1px solid var(--text-color);
         display: flex;
         flex-direction: column;
+        flex: 0 0 10rem;
         width: 10rem;
       }
       .tabs button {
@@ -637,22 +639,117 @@
       .text-image-container {
         align-items: flex-start;
         display: flex;
-        height: 22rem;
-        overflow-y: auto;
-        padding-left: 2rem;
-        padding-top: 2rem;
+        padding: 2rem;
+        height: auto;
       }
       .image-stack {
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 0rem;
         justify-content: center;
         padding-top: 1rem;
+        width: 45%;
       }
-      .text-content {
+      .image-stack.wide-media {
+        width: 58%;
+      }
+      .media-slider {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 55%;
+        position: relative;
+        width: 55%;
+      }
+      .image-stack.wide-media .media-slider {
+        max-width: 100%;
+        width: 100%;
+      }
+      .media-wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .media-wrapper img,
+      .media-wrapper video,
+      .media-wrapper iframe {
+        border: 1px solid var(--text-color);
+        border-radius: 1rem;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+      .results-table-container {
+        border: 1px solid var(--text-color);
+        border-radius: 1rem;
+        overflow-x: auto;
+        padding: 1rem;
+        width: 100%;
+      }
+      .results-table {
+        border-collapse: collapse;
+        min-width: 320px;
+        width: 100%;
+      }
+      .results-table th,
+      .results-table td {
+        border: 1px solid var(--text-color);
+        padding: 0.5rem;
+        text-align: left;
+      }
+      .results-table th {
+        background-color: var(--background-hover);
+      }
+      .media-nav {
+        background: rgba(0, 0, 0, 0.6);
+        border: none;
+        border-radius: 999px;
+        color: #fff;
+        cursor: pointer;
+        height: 34px;
+        opacity: 0.9;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 34px;
+      }
+      .media-nav.prev {
+        left: 0.3rem;
+      }
+      .media-nav.next {
+        right: 0.3rem;
+      }
+      .media-indicator {
+        color: var(--text-color);
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+      }
+      .fade-in {
+        animation: fadeIn 0.35s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .project-text {
         flex: 2 1;
         padding-right: 1rem;
+      }
+      .project-text.wide-media {
+        flex: 0 0 42%;
+        max-width: 42%;
+        padding-right: 1.5rem;
       }
       .text-content h2 {
         color: var(--text-color);
@@ -941,6 +1038,9 @@
           flex-direction: row;
           overflow-x: auto;
         }
+        .media-slider {
+          max-width: 100%;
+        }
         .image-stack::-webkit-scrollbar,
         .text-image-container::-webkit-scrollbar {
           height: 6px;
@@ -1157,7 +1257,7 @@
               <div class="hero-tags">
                 <span>CS @ UT Austin</span>
                 <span>CodeAssist Intern</span>
-                <span>Cytrence SWE</span>
+                <span>Cytrence Intern</span>
                 <span>AI/ML · Automation</span>
                 <span>STEM Mentor</span>
                 <span>Java Coder</span>
@@ -1260,6 +1360,14 @@
                 <button
                   type="button"
                   class="tab-button"
+                  data-project="riot-ml"
+                  role="tab"
+                >
+                  Riot ML Model
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
                   data-project="monke"
                   role="tab"
                 >
@@ -1268,10 +1376,10 @@
                 <button
                   type="button"
                   class="tab-button"
-                  data-project="riot-ml"
+                  data-project="arcado"
                   role="tab"
                 >
-                  Riot ML
+                  Schooled
                 </button>
                 <button
                   type="button"
@@ -1284,14 +1392,6 @@
                 <button
                   type="button"
                   class="tab-button"
-                  data-project="arcado"
-                  role="tab"
-                >
-                  Arcado
-                </button>
-                <button
-                  type="button"
-                  class="tab-button"
                   data-project="king-domino"
                   role="tab"
                 >
@@ -1299,7 +1399,7 @@
                 </button>
               </div>
               <div class="text-image-container">
-                <div class="text-content">
+                <div class="text-content project-text" id="project-text">
                   <h2 id="project-title"></h2>
                   <p class="brief-description" id="project-summary"></p>
                   <div id="project-description"></div>
@@ -1396,22 +1496,75 @@
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="text-content">
-                    <h3 class="">COE Competition Winner</h3>
+                    <h3 class="">Re:Sound A Cappella</h3>
                     <p class="company-name">
-                      UT Austin College of Engineering |
+                      Vocalist & Tenor |
+                      <span class="duration">2023 – Present</span>
+                    </p>
+                    <p class="description">
+                      Arrange harmonies, run rehearsals, and perform across UT
+                      Austin to keep our Christian-interest a cappella group booked
+                      and energized.
+                    </p>
+                    <div class="project-links" style="margin-top: 0.8rem">
+                      <a
+                        href="https://www.instagram.com/resoundacappella/?hl=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Instagram</a
+                      >
+                    </div>
+                  </div>
+                  <img
+                    src="images/resound.png"
+                    alt="Re:Sound A Cappella"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Acts2 Network Koinonia</h3>
+                    <p class="company-name">
+                      Student Leader |
+                      <span class="duration">2023 – Present</span>
+                    </p>
+                    <p class="description">
+                      Member of Acts2 Network Koinonia. We often gather and have fun, serve, and grow together in faith.
+                    </p>
+                    <div class="project-links" style="margin-top: 0.8rem">
+                      <a
+                        href="https://acts2.network/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Acts2 Network</a
+                      >
+                    </div>
+                  </div>
+                  <img
+                    src="images/acts2.jpg"
+                    alt="Acts2 Network"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Koin Volleyball Captain</h3>
+                    <p class="company-name">
+                      Intramural & Service Team |
                       <span class="duration">2024</span>
                     </p>
                     <p class="description">
-                      Led the Riot Games Model Prediction project that
-                      benchmarked LightGBM/XGBoost pipelines on thousands of TFT
-                      matches using Scikit-learn, Pandas, NumPy, MATLAB, and
-                      Hadoop. Earned 1st place out of 100 teams at the COE
-                      competition.
+                      Organize practices, scrimmages, and community service
+                      outings. Lead team to semifinals in UT intramural league.
                     </p>
                   </div>
                   <img
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgODAnPgogIDxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nODAnIHJ4PSc4JyByeT0nOCcgZmlsbD0nIzVjMmQ5MScvPgogIDx0ZXh0IHg9JzEwMCcgeT0nNTAnIGZvbnQtZmFtaWx5PSdGaXJhIENvZGUsIG1vbm9zcGFjZScgZm9udC1zaXplPScyOCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPkNPRTwvdGV4dD4KPC9zdmc+"
-                    alt="COE award badge"
+                    src="images/volleyball.png"
+                    alt="Koin Volleyball"
                     class="company-logo"
                   />
                 </div>
@@ -1419,21 +1572,32 @@
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="text-content">
-                    <h3 class="">Automation Systems R&D</h3>
+                    <h3 class="">Eclairs</h3>
                     <p class="company-name">
-                      Cytrence Applied Research |
-                      <span class="duration">2024 – 2025</span>
+                      UT Austin Robotics club |
+                      <span class="duration">2023 – Present</span>
                     </p>
                     <p class="description">
-                      Explored end-to-end automation for UI testing, combining
-                      PyTorch/TensorFlow models, CUDA optimizations, and LoRaWAN
-                      data collection. Shared takeaways with senior engineers to
-                      improve internal tooling and data accuracy.
+                      Worked on multiple robotics projects including minecraft 3D-generation, fitness tracker app, and robot design for competitions. Was a tech lead for the fitness tracker app, leading a team of 4 to design and implement the app using React Native and Firebase. We also had hardware integration with fitness trackers using Bluetooth Low Energy (BLE) protocols.
                     </p>
+                    <div class="project-links" style="margin-top: 0.8rem">
+                      <a
+                        href="https://eclairrobotics.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Website</a
+                      >
+                      <a
+                        href="https://github.com/ECLAIR-Robotics/fitness-tracker"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Fitness Tracker App</a
+                      >
+                    </div>
                   </div>
                   <img
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgODAnPgogIDxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nODAnIHJ4PSc4JyByeT0nOCcgZmlsbD0nIzFmNGQ1ZScvPgogIDx0ZXh0IHg9JzEwMCcgeT0nNTAnIGZvbnQtZmFtaWx5PSdGaXJhIENvZGUsIG1vbm9zcGFjZScgZm9udC1zaXplPScyOCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPkF1dG9tYXRpb248L3RleHQ+Cjwvc3ZnPg=="
-                    alt="Automation badge"
+                    src="images/eclair.jpeg"
+                    alt="Eclairs robotics"
                     class="company-logo"
                   />
                 </div>
@@ -1441,21 +1605,28 @@
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="text-content">
-                    <h3 class="">STEM Mentor</h3>
+                    <h3 class="">FreeTail Hackers</h3>
                     <p class="company-name">
-                      Code Ninjas & Community |
-                      <span class="duration">2020 – 2023</span>
+                      Organizer & Volunteer |
+                      <span class="duration">2024 – Present</span>
                     </p>
                     <p class="description">
-                      Partnered with management to expand tutoring coverage, ran
-                      workshops, and helped hundreds of students prototype their
-                      first C#/Python/Unity projects while emphasizing
-                      collaboration and creativity.
+                      Support UT Austin&rsquo;s flagship hackathon by mentoring
+                      teams, staffing judging, and helping run workshops so 600+
+                      students can build ambitiously.
                     </p>
+                    <div class="project-links" style="margin-top: 0.8rem">
+                      <a
+                        href="https://freetailhackers.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Website</a
+                      >
+                    </div>
                   </div>
                   <img
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgODAnPgogIDxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nODAnIHJ4PSc4JyByeT0nOCcgZmlsbD0nI2Q2NTc4MCcvPgogIDx0ZXh0IHg9JzEwMCcgeT0nNTAnIGZvbnQtZmFtaWx5PSdGaXJhIENvZGUsIG1vbm9zcGFjZScgZm9udC1zaXplPScyOCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPk1lbnRvcjwvdGV4dD4KPC9zdmc+"
-                    alt="Mentor badge"
+                    src="images/freetail.jpg"
+                    alt="FreeTail Hackers"
                     class="company-logo"
                   />
                 </div>
