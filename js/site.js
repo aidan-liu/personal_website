@@ -137,6 +137,67 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
     },
+    dumb: {
+      wideMedia: true,
+      title: "Dumb",
+      summary: "Paywall bypass app that keeps paywalled apps usable.",
+      description: [
+        "Paywall bypass app that keeps the core experience of paywalled apps simple and usable.",
+        "Clean, direct UI powered by a SwiftUI frontend, GCP-backed AI features, and custom Procreate-drawn animations.",
+      ],
+      links: [
+        { label: "Website", url: "https://aidan-liu.github.io/dumbwebsite/" },
+        { label: "GitHub Repo", url: "https://github.com/aidan-liu/dumbwebsite" },
+      ],
+      tech: ["SwiftUI", "Swift", "GCP", "AI Features", "Procreate", "iOS"],
+      media: [
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.41.11 PM.png",
+          alt: "Dumb app screen 1",
+        },
+        {
+          type: "image",
+          src: "images/dumb/IMG_0040.PNG",
+          alt: "Dumb app overview",
+        },
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.44.37 PM.png",
+          alt: "Dumb app screen 2",
+        },
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.45.01 PM.png",
+          alt: "Dumb app screen 3",
+        },
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.46.38 PM.png",
+          alt: "Dumb app screen 4",
+        },
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.46.50 PM.png",
+          alt: "Dumb app screen 5",
+        },
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.47.09 PM.png",
+          alt: "Dumb app screen 6",
+        },
+        {
+          type: "image",
+          src: "images/dumb/Screenshot 2026-01-07 at 3.47.16 PM.png",
+          alt: "Dumb app screen 7",
+        },
+        {
+          type: "video",
+          src: "images/dumb/dumbdiet_animation.mov",
+          mime: "video/mp4",
+        },
+      ],
+    },
     "riot-ml": {
       title: "Riot ML Model",
       summary: "COE competition project benchmarking TFT match outcomes.",

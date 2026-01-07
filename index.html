@@ -671,16 +671,26 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        background-color: var(--background-color);
+        border: 1px solid var(--text-color);
+        border-radius: 0;
+        overflow: hidden;
       }
       .media-wrapper img,
       .media-wrapper video,
       .media-wrapper iframe {
-        border: 1px solid var(--text-color);
-        border-radius: 1rem;
+        border: none;
+        border-radius: 0;
+        display: block;
         height: auto;
         max-width: 100%;
         object-fit: contain;
         width: 100%;
+      }
+      .media-wrapper img,
+      .media-wrapper video {
+        max-height: 60vh;
+        width: auto;
       }
       .results-table-container {
         border: 1px solid var(--text-color);
@@ -921,13 +931,16 @@
         margin-right: 1rem;
         padding: 0.4rem 0.8rem;
       }
-      .text-image-container img {
+      .image-stack > img {
         align-self: center;
         border: 1px solid var(--text-color);
-        flex: 1 1;
-        height: 16rem;
-        object-fit: cover;
-        width: 16rem;
+        border-radius: 1rem;
+        display: block;
+        height: auto;
+        max-height: 60vh;
+        max-width: 100%;
+        object-fit: contain;
+        width: auto;
       }
       .image-placeholder {
         border: 1px dashed var(--text-color);
@@ -1069,10 +1082,10 @@
           padding: 0;
           text-align: center;
         }
-        .text-image-container img {
-          height: 12rem;
+        .image-stack > img {
+          max-height: 50vh;
           margin-bottom: 1rem;
-          width: 12rem;
+          width: auto;
         }
         .panda-path-images img {
           height: 8rem;
@@ -1094,9 +1107,9 @@
           height: auto;
           width: 100%;
         }
-        .text-image-container img {
-          height: 10rem;
-          width: 10rem;
+        .image-stack > img {
+          max-height: 45vh;
+          width: auto;
         }
         .panda-path-images img {
           height: 6rem;
@@ -1360,6 +1373,14 @@
                 <button
                   type="button"
                   class="tab-button"
+                  data-project="dumb"
+                  role="tab"
+                >
+                  Dumb
+                </button>
+                <button
+                  type="button"
+                  class="tab-button"
                   data-project="riot-ml"
                   role="tab"
                 >
@@ -1574,11 +1595,12 @@
                   <div class="text-content">
                     <h3 class="">Eclairs</h3>
                     <p class="company-name">
-                      UT Austin Robotics club |
+                      UT Austin Robotics Club |
                       <span class="duration">2023 – Present</span>
                     </p>
                     <p class="description">
-                      Worked on multiple robotics projects including minecraft 3D-generation, fitness tracker app, and robot design for competitions. Was a tech lead for the fitness tracker app, leading a team of 4 to design and implement the app using React Native and Firebase. We also had hardware integration with fitness trackers using Bluetooth Low Energy (BLE) protocols.
+                      Worked on multiple robotics projects including minecraft 3D-generation, fitness tracker app, and robot design for competitions. 
+                      Was a tech lead for the fitness tracker app, leading a team of 4 to design and implement the app using React Native and Firebase. We also had hardware integration with fitness trackers using Bluetooth Low Energy (BLE) protocols.
                     </p>
                     <div class="project-links" style="margin-top: 0.8rem">
                       <a
@@ -1586,12 +1608,6 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         >Website</a
-                      >
-                      <a
-                        href="https://github.com/ECLAIR-Robotics/fitness-tracker"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Fitness Tracker App</a
                       >
                     </div>
                   </div>
@@ -1607,7 +1623,7 @@
                   <div class="text-content">
                     <h3 class="">FreeTail Hackers</h3>
                     <p class="company-name">
-                      Organizer & Volunteer |
+                      Member & Volunteer |
                       <span class="duration">2024 – Present</span>
                     </p>
                     <p class="description">
