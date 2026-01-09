@@ -198,6 +198,52 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
     },
+    "hypno-ui": {
+      wideMedia: true,
+      title: "hypnoUI",
+      summary: "Hypnotic UI study showcasing motion-first components.",
+      description: [
+        "This created hypnotic UI elements using Vite and React, focusing on rhythm and flow.",
+        "Each component leans on looping motion, layered gradients, and soft depth cues to keep the eye moving.",
+        "I explored timing curves and staggered transitions to make interactions feel trancelike instead of twitchy.",
+        "The layout balances minimal copy with bold visuals so the motion carries the experience.",
+        "It serves as a playground for experimenting with ambient UI patterns and future interface concepts.",
+      ],
+      links: [
+        {
+          label: "GitHub Repo",
+          url: "https://github.com/aidan-liu/hypnoUI?tab=readme-ov-file",
+        },
+      ],
+      tech: ["Vite", "React", "JavaScript", "CSS", "Motion Design"],
+      media: [
+        {
+          type: "video",
+          src: "images/hypnoUI/Screen Recording 2026-01-09 at 4.01.51 PM.mov",
+          mime: "video/mp4",
+        },
+        {
+          type: "video",
+          src: "images/hypnoUI/Screen Recording 2026-01-09 at 4.22.40 PM.mov",
+          mime: "video/mp4",
+        },
+        {
+          type: "image",
+          src: "images/hypnoUI/00000.png",
+          alt: "hypnoUI screen 1",
+        },
+        {
+          type: "image",
+          src: "images/hypnoUI/00003.png",
+          alt: "hypnoUI screen 2",
+        },
+        {
+          type: "image",
+          src: "images/hypnoUI/00012.png",
+          alt: "hypnoUI screen 3",
+        },
+      ],
+    },
     "riot-ml": {
       title: "Riot ML Model",
       summary: "COE competition project benchmarking TFT match outcomes.",
