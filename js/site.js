@@ -219,6 +219,11 @@ document.addEventListener("DOMContentLoaded", () => {
       media: [
         {
           type: "video",
+          src: "images/hypnoUI/Screen Recording 2026-01-09 at 4.51.24 PM.mov",
+          mime: "video/mp4",
+        },
+        {
+          type: "video",
           src: "images/hypnoUI/Screen Recording 2026-01-09 at 4.01.51 PM.mov",
           mime: "video/mp4",
         },
