@@ -1206,6 +1206,10 @@
         margin-left: -0.6rem;
         max-width: 9rem;
       }
+      .company-logo[src*="daemoai"] {
+        transform: translateX(-0.5rem);
+        max-width: 6rem;
+      }
       @media (max-width: 768px) {
         .experience-header {
           display: block;
@@ -1443,6 +1447,29 @@
             <p style="font-size: 2rem">Work Experience</p>
             <div class="vertical-line2"></div>
             <section class="experience-section">
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="text-content">
+                    <h3 class="">Daemo AI Fellow</h3>
+                    <p class="company-name">
+                      Daemo AI |
+                      <span class="duration">Jan 2026 – Present</span>
+                    </p>
+                    <p class="description">
+                      Contributed to Daemo AI, a deterministic runtime that safely
+                      connects LLMs to structured data sources like SQL, MongoDB,
+                      Supabase, and internal APIs. Built contract test projects to
+                      validate the Plan -> Execute pipeline, RBAC guardrails, and
+                      API-layer isolation.
+                    </p>
+                  </div>
+                  <img
+                    src="images/daemoai.png"
+                    alt="Daemo AI logo"
+                    class="company-logo"
+                  />
+                </div>
+              </div>
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="text-content">
