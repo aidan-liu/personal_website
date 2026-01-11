@@ -211,12 +211,21 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       links: [
         {
+          label: "Website",
+          url: "https://aidan-liu.github.io/hypnoUI/",
+        },
+        {
           label: "GitHub Repo",
           url: "https://github.com/aidan-liu/hypnoUI?tab=readme-ov-file",
         },
       ],
       tech: ["Vite", "React", "JavaScript", "CSS", "Motion Design"],
       media: [
+        {
+          type: "image",
+          src: "images/hypnoUI/Screenshot 2026-01-10 at 10.19.11 PM.png",
+          alt: "hypnoUI latest screen",
+        },
         {
           type: "video",
           src: "images/hypnoUI/Screen Recording 2026-01-09 at 4.51.24 PM.mov",
