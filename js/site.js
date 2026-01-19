@@ -101,6 +101,94 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
     },
+    quorum: {
+      wideMedia: true,
+      title: "Quorum",
+      summary: "AI parliament simulation with on-chain voting for transparency.",
+      description: [
+        "We were inspired by the opacity surrounding legislative processes and the growing need for citizens to understand how bills move through parliament. As blockchain technology and smart contracts become increasingly relevant to governance, we wanted to explore how these tools could improve transparency and trust.",
+        "Quorum was born from this idea: a simulation where AI representatives debate legislation, and every outcome—votes, amendments, and final decisions—is immutably recorded on-chain through smart contracts, backed by efficient token-based voting systems.",
+      ],
+      links: [
+        {
+          label: "Devpost",
+          url: "https://devpost.com/software/title-n8ag50?ref_content=my-projects-tab&ref_feature=my_projects",
+        },
+        {
+          label: "GitHub Repo",
+          url: "https://github.com/aidan-liu/quorum-nexhacks",
+        },
+      ],
+      tech: [
+        "Blockchain",
+        "Smart Contracts",
+        "AI Agents",
+        "Token Voting",
+        "Governance Simulation",
+      ],
+      media: [
+        {
+          type: "video",
+          src: "images/quorum/Screen Recording 2026-01-18 at 12.08.24 PM.mov",
+          mime: "video/mp4",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.21.26 PM.png",
+          alt: "Quorum screen 1",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.08 PM 2.png",
+          alt: "Quorum screen 2",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.08 PM.png",
+          alt: "Quorum screen 3",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.15 PM.png",
+          alt: "Quorum screen 4",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.20 PM.png",
+          alt: "Quorum screen 5",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.26 PM.png",
+          alt: "Quorum screen 6",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.33 PM.png",
+          alt: "Quorum screen 7",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.38 PM.png",
+          alt: "Quorum screen 8",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.46 PM.png",
+          alt: "Quorum screen 9",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.22.54 PM.png",
+          alt: "Quorum screen 10",
+        },
+        {
+          type: "image",
+          src: "images/quorum/Screenshot 2026-01-18 at 12.23.00 PM.png",
+          alt: "Quorum screen 11",
+        },
+      ],
+    },
     monke: {
       wideMedia: true,
       title: "Monke",
